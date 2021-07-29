@@ -37,7 +37,8 @@ print("""***********************************
 ***********************************""")
 while i>=0:
  order_item = input(">")
- if order_item.lower() in menuList:
+ order_item=order_item.lower()
+ if order_item in menuList:
   order.append(order_item)
   count = order.count(order_item)
   print(f" ** {count} order of {order_item} have been added to your meal **")
